@@ -1,0 +1,88 @@
+html,
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #7f8c8d;
+}
+
+strong {
+    color: darkgreen;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 14px 16px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: darkgreen;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.card h3 {
+    text-align: left;
+    color: #7f8c8d;
+    font-size: 30px;
+}
+
+.card .number {
+    font-size: 29px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.label {
+    color: #7f8c8d;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.tortenet {
+    text-align: justify;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+

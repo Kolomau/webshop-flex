@@ -1,0 +1,122 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 40px 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08) translateY(-10px);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.features li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured .features li {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.features li:before {
+    content: "✓ ";
+    color: #667eea;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.pricing-card.featured .features li:before {
+    color: white;
+}
+
+.btn {
+    background-color: #667eea;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #5568d3;
+}
+
+.pricing-card.featured .btn {
+    background-color: white;
+    color: #667eea;
+}
+
+.pricing-card.featured .btn:hover {
+    background-color: #f0f0f0;
+}
+
+.pricing-card.featured h3 {
+    color: black;
+}
